@@ -11,6 +11,10 @@ TagManager:
   - Red
   - Green
   - SkyCam
+  - spawnNorth
+  - spawnEast
+  - spawnWest
+  - spawnSouth
   layers:
   - Default
   - TransparentFX

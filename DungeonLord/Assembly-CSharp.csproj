@@ -67,7 +67,11 @@
     <Compile Include="Assets\Scripts\CamMouseLook.cs" />
     <Compile Include="Assets\Scripts\CharacterController.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\resourceTracking.cs" />
     <Compile Include="Assets\Scripts\Solidify.cs" />
+    <Compile Include="Assets\Scripts\spawnEnemies.cs" />
+    <Compile Include="Assets\Scripts\SwitchCamera.cs" />
+    <None Include="Assets\Shaders\fresnel.shader" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>C:/Users/Efe/Desktop/Efe/ProjectTD/DungeonSquad/DungeonLord/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
