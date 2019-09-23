@@ -2,16 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public bool isEnd;
     public bool isTwo;
     private int nextScene;
+    public Button startButton;
+    public Button exitButton;
+    public string mainScene;
+
     // Start is called before the first frame update
     void Start()
     {
-        //DontDestroyOnLoad(this.gameObject);
+        DontDestroyOnLoad(this.gameObject);
         isEnd = false;
         nextScene = SceneManager.GetActiveScene().buildIndex + 1;
     }
@@ -30,5 +35,15 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene(nextScene);
 
+    }
+
+    public void StartGame()
+    {
+        SceneManager.LoadScene(mainScene);
+    }
+
+    public void EndGame()
+    {
+        Application.Quit();
     }
 }
